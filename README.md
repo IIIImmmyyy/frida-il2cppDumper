@@ -2,15 +2,16 @@
 
 ### Riru Il2cppDumper 加强版 内存里直接dump出源码信息
 
-### 针对大部分global-metadata.dat 文件加密 il2cpp.so加密 可无视加密
-### 对魔改了结构体的游戏也同时有效，除非丧心病狂全改了(目前没发现,大部分的魔改处理还是在GlobalMetadataHeader)
+#### 针对大部分global-metadata.dat 文件加密 il2cpp.so加密 可无视加密
+#### 对魔改了结构体的游戏也同时有效，除非丧心病狂全改了(目前没发现,大部分的魔改处理还是在GlobalMetadataHeader)
 ## 支持Unity版本:
 ### 2017-2021  （仅测试过2017和2018引擎，理论支持至最新）
 
 
 ### 本项目基于Node.js环境 请预先配置
+
 ## 如何使用
-##1.
+## 1.
 > 需要在config.ts 里修改以下参数
 
 
