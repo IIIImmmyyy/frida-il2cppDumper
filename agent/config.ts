@@ -4,11 +4,11 @@ export var UnityVer = {
 };
 export const soName = "libil2cpp.so";
 
-export  const pkg_name="com.imy.test";
+export  const pkg_name="com.xx.xx";
 
 export const UNITY_VER = UnityVer.V_2017_4_31f1;
 
-export const FromTypeDefinition_Addr = 0xBBC38E8; //通过IDA 计算得到 只有Unity2017.3.版本需要手动计算2018版本不需要
+export const FromTypeDefinition_Addr = undefined; //通过IDA 计算得到 只有Unity2017.3.版本需要手动计算2018版本不需要
 
 export const path = "/data/data/"+pkg_name+"/dump.cs";
 
