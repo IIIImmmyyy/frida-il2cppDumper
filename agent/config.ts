@@ -4,7 +4,7 @@ export var UnityVer = {
 };
 export const soName = "libil2cpp.so";
 
-export  const pkg_name="com.tencent.lolm";
+export  const pkg_name="com.xx.xx";
 
 export const UNITY_VER = UnityVer.V_2018_4_36f1;
 
