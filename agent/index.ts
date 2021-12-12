@@ -5,5 +5,6 @@ import {dumper} from "./dumper";
 setImmediate(main)
 
 function main(){
-   dumper.start();
+   // dumper.start();
+   log("hookStart");
 }

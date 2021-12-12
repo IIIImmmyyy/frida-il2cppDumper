@@ -25,7 +25,7 @@ export var dumper = {
 
         }
         for (let i = 0; i < il2CppImageArray.length; i++) {
-            log("process: "+(i+1)+"/"+assemblies_count);
+            log("process: " + (i + 1) + "/" + assemblies_count);
             let Il2CppImage = il2CppImageArray[i];
 
             let nameNoExt = Il2CppImage.nameNoExt();
@@ -190,7 +190,7 @@ export var dumper = {
             this.out(return_cls.name() + " " + methodInfo.name() + "(");
             let paramCount = methodInfo.getParamCount();
             // log("paramCount:" + paramCount);
-            if (paramCount>0){
+            if (paramCount > 0) {
                 for (let i = 0; i < paramCount; i++) {
                     let paramType = methodInfo.getParam(i);
                     let paramCls = il2cppApi.il2cpp_class_from_type(paramType);
@@ -201,14 +201,14 @@ export var dumper = {
                         name = split[0];
                         name = name + paramCls.getGenericName();
                     }
-                    this.out(name+" "+methodInfo.getParamName(i));
-                    if (i+1!==paramCount){
+                    this.out(name + " " + methodInfo.getParamName(i));
+                    if (i + 1 !== paramCount) {
                         this.out(", ");
-                    }else {
-                        this.out( ") { }\n");
+                    } else {
+                        this.out(") { }\n");
                     }
                 }
-            }else {
+            } else {
                 this.out("){ }\n");
             }
 
@@ -229,10 +229,14 @@ export var dumper = {
             let pro_class;
             let method = propertyInfo.getMethod();
             let setMethod = propertyInfo.setMethod();
+            if (method.isNull()&& setMethod.isNull()){
+
+                continue;
+            }
             if (!method.isNull()) {
                 let methodModifier = utils.get_method_modifier(method.getFlags());
                 let methodPointer = method.getMethodPointer()
-                // log("methodModifier:" + methodModifier);
+                log("methodModifier:" + methodModifier + " methodPointer:" + methodPointer);
                 this.out(methodModifier);
                 pro_class = il2cppApi.il2cpp_class_from_type(method.getReturnType());
             } else if (!setMethod.isNull()) {
@@ -240,7 +244,9 @@ export var dumper = {
                 this.out(setModifier);
                 pro_class = il2cppApi.il2cpp_class_from_type(setMethod.getReturnType());
             }
+            log("pro_class:"+pro_class +"propertyInfo:"+propertyInfo.getName() +" method:"+method +" setMethod:"+setMethod)
             this.out(pro_class.name() + " " + propertyInfo.getName() + " { ");
+
             if (!method.isNull()) {
                 this.out("get; ");
             }
