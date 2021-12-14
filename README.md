@@ -1,8 +1,8 @@
 # frida-il2cppDumper
 
 ### Riru Il2cppDumper 加强版 内存里直接dump出源码信息
-
-#### 针对大部分global-metadata.dat 文件加密 il2cpp.so加密 可无视加密
+#### Riru 无法输出泛型的问题也修正了、 但由于引擎版本特性、部分class还是无法输出propertyInfo的信息、 无伤大雅;
+#### 针对大部分global-metadata.dat 文件加密 il2cpp.so加密 可无视加密  基于主动调用、 所以就算是边运行边解密的壳也能成功解出
 #### 对魔改了结构体的游戏也同时有效，除非丧心病狂全改了(目前没发现,大部分的魔改处理还是在GlobalMetadataHeader)
 ## 支持Unity版本:
 ### 2017-2021  （仅测试过2017和2018引擎，理论支持至最新）
@@ -29,6 +29,8 @@
 ### 如果不知道游戏引擎的版本 就修改为2018的版本， 2017引擎较为特殊 需要在IDA中手动查找FromTypeDefinition
 
 
+## 待完成内容
+### 生成IDA脚本
 ## 联系方式
 > 295238641@qq.com 
 ## 感谢
