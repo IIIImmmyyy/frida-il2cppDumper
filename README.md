@@ -20,6 +20,7 @@
 
 > export const UNITY_VER = UnityVer.V_2018_4_36f1; //不确定什么引擎就使用2018
 
+### node.js 环境 命令 npm run watch 使修改文件生效。
 
 ### 如果闲编译麻烦直接下载_agent.js 并修改以上参数
 ## 2.
