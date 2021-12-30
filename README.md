@@ -28,6 +28,8 @@
 
 
 ### 如果不知道游戏引擎的版本 就修改为2018的版本， 2017引擎较为特殊 需要在IDA中手动查找FromTypeDefinition
+### 不知如何寻找请点击以下链接教程
+[如何寻找FromTypeDefinition ](https://www.jianshu.com/p/06b518225e15)
 
 
 ## 待完成内容

@@ -8,8 +8,8 @@ exports.UnityVer = {
 };
 exports.soName = "libil2cpp.so";
 exports.pkg_name = "com.xx.xx";
-exports.UNITY_VER = exports.UnityVer.V_2018_4_36f1;
-exports.FromTypeDefinition_Addr = undefined; //通过IDA 计算得到 只有Unity2017.3.版本需要手动计算2018版本不需要
+exports.UNITY_VER = exports.UnityVer.V_2017_4_31f1;
+exports.FromTypeDefinition_Addr = 0x368d6fc; //通过IDA 计算得到 只有Unity2017.3.版本需要手动计算2018版本不需要
 exports.path = "/data/data/" + exports.pkg_name + "/dump.cs";
 exports.API_NOT_EXIT = -1001;
 },{}],2:[function(require,module,exports){
