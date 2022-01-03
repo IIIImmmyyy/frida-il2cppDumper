@@ -173,9 +173,9 @@ export var dumper = {
                 this.out("\t// RVA: 0x  VA: 0x0");
             }
             // log("slot:" + methodInfo.getSlot());
-            if (methodInfo.getSlot() !== 65535) {
-                this.out(" Slot: " + methodInfo.getSlot());
-            }
+            // if (methodInfo.getSlot() !== 65535) {
+            //     this.out(" Slot: " + methodInfo.getSlot());
+            // }
             this.out("\n\t");
             let methodModifier = utils.get_method_modifier(methodInfo.getFlags());
             this.out(methodModifier);
@@ -235,8 +235,7 @@ export var dumper = {
             }
             if (!method.isNull()) {
                 let methodModifier = utils.get_method_modifier(method.getFlags());
-                let methodPointer = method.getMethodPointer()
-                log("methodModifier:" + methodModifier + " methodPointer:" + methodPointer);
+                // log("methodModifier:" + methodModifier + " methodPointer:" + methodPointer);
                 this.out(methodModifier);
                 pro_class = il2cppApi.il2cpp_class_from_type(method.getReturnType());
             } else if (!setMethod.isNull()) {
@@ -244,7 +243,7 @@ export var dumper = {
                 this.out(setModifier);
                 pro_class = il2cppApi.il2cpp_class_from_type(setMethod.getReturnType());
             }
-            log("pro_class:"+pro_class +"propertyInfo:"+propertyInfo.getName() +" method:"+method +" setMethod:"+setMethod)
+            // log("pro_class:"+pro_class +"propertyInfo:"+propertyInfo.getName() +" method:"+method +" setMethod:"+setMethod)
             this.out(pro_class.name() + " " + propertyInfo.getName() + " { ");
 
             if (!method.isNull()) {
