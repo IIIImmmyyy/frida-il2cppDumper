@@ -41,3 +41,4 @@
 ## 感谢
 [RiruIl2CppDumper ](https://github.com/Perfare/Riru-Il2CppDumper.git)
 
+## 接定制、过保护。 可联系以上QQ
