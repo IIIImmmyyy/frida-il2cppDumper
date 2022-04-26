@@ -36,7 +36,7 @@
 
 ## 待完成内容
 ### 生成IDA脚本
-## 联系方式  接定制、dump 过保护。一键dump工具
+## 联系方式  (接定制、dump 过保护。一键dump工具)
 > 295238641@qq.com  QQ：295238641
 ## 感谢
 [RiruIl2CppDumper ](https://github.com/Perfare/Riru-Il2CppDumper.git)
