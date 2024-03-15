@@ -1,5 +1,5 @@
 
-# 本人已开U3D 课程 本项目将隐藏
+
 
 # [Android U3D手游安全中级篇] 
 # [https://github.com/IIIImmmyyy/u3dCourse](https://github.com/IIIImmmyyy/U3DGameCourse)
@@ -20,23 +20,16 @@
 ### 2017-2021  （仅测试过2017和2018引擎，理论支持至最新）
 
 
-### 本项目基于Node.js环境 请预先配置
+
 
 ### 尽量不要在模拟器环境使用，由于模拟器使用X86架构， 如果游戏没有编译X86的SO frida是无法找到对应SO的，另外frida对于模拟器的兼容性也并非特别的完美。
 
 ## 如何使用
 ## 1.
-> 需要在config.ts 里修改以下参数
-
-
-
-> export  const pkg_name="com.imy.test";
-
+> 修改_agent.js 下exports.pkg_name = "You game package";
 > export const UNITY_VER = UnityVer.V_2018_4_36f1; //不确定什么引擎就使用2018
 
-### node.js 环境 命令 npm run watch 使修改文件生效。
 
-### 如果闲编译麻烦直接下载_agent.js 并修改以上参数
 ## 2.
 ### 运行游戏 -->运行脚本-->文件生成在/data/data/游戏包名/dump.cs下
 
