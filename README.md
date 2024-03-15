@@ -27,11 +27,11 @@
 ## 如何使用
 ## 1.
 > 修改_agent.js 下exports.pkg_name = "You game package";
-> export const UNITY_VER = UnityVer.V_2018_4_36f1; //不确定什么引擎就使用2018
-
 
 ## 2.
 ### 运行游戏 -->运行脚本-->文件生成在/data/data/游戏包名/dump.cs下
+
+## 3.默认开启 Cpp2IL功能 在/data/data/游戏包名/files/Script/下将生成各个对应的单cs类
 
 
 ### 如果不知道游戏引擎的版本 就修改为2018的版本， 2017引擎较为特殊 需要在IDA中手动查找FromTypeDefinition
