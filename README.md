@@ -31,7 +31,7 @@
 ## 2.
 ### 运行游戏 -->运行脚本-->文件生成在/data/data/游戏包名/dump.cs下
 
-## 3.默认开启 Cpp2IL功能 在/data/data/游戏包名/files/Script/下将生成各个对应的单cs类
+## 3.默认开启 Cpp2IL功能 在/data/data/游戏包名/files/Script/下将生成各个对应的单cs类,打开任一版本Unity直接导入即可查看层级关系
 <img alt ="u3d.ong" src="https://raw.githubusercontent.com/IIIImmmyyy/frida-il2cppDumper/main/1.png" >
 
 ### 如果不知道游戏引擎的版本 就修改为2018的版本， 2017引擎较为特殊 需要在IDA中手动查找FromTypeDefinition
