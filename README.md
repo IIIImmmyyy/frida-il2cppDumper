@@ -24,8 +24,9 @@
 
 ## 如何使用
 ## 1.
-> 修改_agent.js 下exports.pkg_name = "You game package";
-> IOS 下修改SO 为UnityFramework 如果为其他命名请自行修改
+#### > Android 修改_agent.js 下exports.pkg_name = "You game package";
+
+#### > IOS 下修改SO 为UnityFramework 如果为其他命名请自行修改
 
 ## 2.
 ### 运行游戏 -->运行脚本-->文件生成在/data/data/游戏包名/dump.cs下
