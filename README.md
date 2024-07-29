@@ -34,6 +34,7 @@
 ### 3.默认开启 Cpp2IL功能(仅支持安卓，IOS懒得写= =) 在/data/data/游戏包名/files/Script/下将生成各个对应的单cs类,打开任一版本Unity直接导入即可查看层级关系
 <img alt ="u3d.ong" src="https://raw.githubusercontent.com/IIIImmmyyy/frida-il2cppDumper/main/1.png" >
 
+### 4.CPP2IL 新增压缩生成的Script文件夹，以供快速导出 默认路径/data/data/游戏包名/files/Script.zip。不开启压缩关闭export let ZipOutCSFile=false; 默认true
 
 
 ## 感谢
