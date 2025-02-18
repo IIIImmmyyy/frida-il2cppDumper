@@ -29,6 +29,8 @@
 >*  测试游戏 :  迷途之光 、阿瑞斯病毒2
 >*  测试机型 OnePlus 7 Pro (Android 12 )
 >*  如何修复易盾加固的So？ 请关注我的U3D课程。 易盾So修复提供全部的源码，并且全自动修复所有新版易盾So
+>*  [https://github.com/IIIImmmyyy/u3dCourse](https://github.com/IIIImmmyyy/U3DGameCourse)
+
 
 ## 如何使用
 ## 1.
